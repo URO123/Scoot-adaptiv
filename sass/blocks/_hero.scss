@@ -1,0 +1,134 @@
+.hero {
+	position: relative;
+	background-image: url('../../images/Bitmap\ \(7\).png');
+	background-size: cover;
+	padding: 152px 0;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 350px;
+		left: calc(50% - 800px);
+		width: 203px;
+		height: 16px;
+		background-image: url('../../images/Path\ 2.svg');
+	}
+	&::after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 350px;
+		left: calc(50% - 20px);
+		width: 452px;
+		height: 151px;
+		background-image: url('../../images/Group\ 8\ Copy\ \(1\).svg');
+	}
+}
+
+.hero__main {
+	width: 100%;
+	max-width: 500px;
+}
+.hero__title {
+    color: #FFF;
+
+font-family: "Space Mono";
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: 56px; /* 100% */
+letter-spacing: -2.5px;
+margin: 0;
+}
+.hero__text {
+	position: relative;
+    color: #FFF;
+
+font-family: sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; 
+	margin-top: 40px;
+	margin-left: 95px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: -94px;
+		top: 20px;
+		width: 94px;
+		height: 1px;
+		background-color: #d9d9d9;
+	}
+}
+.hero__link {
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	font-family:sans-serif;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 25px;
+	background-color: #fcb72b;
+	padding: 14px 39px;
+	text-decoration: none;
+	margin-top: 40px;
+	margin-left: 95px;
+}
+@media only screen and (max-width: 900px) {
+	.hero::after {
+		left: calc(50% - 550px);
+	}
+}
+@media only screen and (max-width: 768px) {
+	.hero {
+		padding-bottom: 217px;
+		padding-top: 137px;
+		&::after {
+			left: calc(50% - 540px);
+			top: 440px;
+		}
+	}
+
+	.hero__main {
+		max-width: 80%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.hero__text {
+		margin-left: 0;
+
+		&::before {
+			content: none;
+		}
+	}
+
+	.hero__link {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	.hero {
+		padding-top: 115px;
+		padding-bottom: 179px;
+	}
+	.hero__title {
+		color: #fff;
+		text-align: center;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 40px; /* 100% */
+		letter-spacing: -1.786px;
+        font-family: "Space Mono" sans-serif;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.hero::after {
+        top: 500px;
+	}
+}
