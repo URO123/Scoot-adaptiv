@@ -909,7 +909,7 @@ body {
     gap: 130px;
   }
   .about-inner {
-    padding-left: 0;
+    padding-right: 10px;
   }
   .about-div {
     flex-direction: column;
