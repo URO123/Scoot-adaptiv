@@ -1,5 +1,7 @@
 .service {
     margin-top: 200px;
+    margin-bottom: 330px;
+
 }
 .service__list {
     list-style: none;
@@ -8,6 +10,11 @@
     gap: 155px;
 }
 .service__item {
+	position: relative;
+	@include flex-starter;
+	justify-content: space-between;
+}
+.service__item1 {
 	position: relative;
 	@include flex-starter;
 	justify-content: space-between;
@@ -118,8 +125,11 @@
 		overflow-x: hidden;
 	}
 	.service__item {
-		flex-direction: column-reverse;
+        flex-direction: column-reverse;
 	}
+    .service__item1{
+        flex-direction: column;
+    }
 
 	.service__item-main {
 		width: 100%;
@@ -144,8 +154,13 @@
 	}
 
 	.service__item-img1 {
-		margin-top: 56px;
+        margin-bottom: 56px;
 	}
+    .box3{
+        &::after{
+            content: none;
+        }
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -165,4 +180,5 @@
 		font-size: 32px;
 		letter-spacing: -1.429px;
 	}
+
 }
