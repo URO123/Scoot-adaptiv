@@ -697,13 +697,13 @@ body {
 
 .service__item-text {
   color: #939caa;
-  font-family: "Space Mono" sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px; /* 166.667% */
+  line-height: 25px;
   margin-top: 24px;
   margin-bottom: 40px;
+  font-family: sans-serif;
 }
 
 .service__item-link {
