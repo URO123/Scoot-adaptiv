@@ -1,7 +1,7 @@
 .service {
     margin-top: 200px;
     margin-bottom: 330px;
-
+    overflow-x: hidden;
 }
 .service__list {
     list-style: none;
@@ -162,7 +162,7 @@
         }
     }
 }
-@media only screen and (max-width: 710px){
+@media only screen and (max-width: 768px){
     .box {
 		&::before {
 			left: 20px;

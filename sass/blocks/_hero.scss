@@ -83,7 +83,7 @@ line-height: 25px;
 		left: calc(50% - 550px);
 	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1028px) {
 	.hero {
 		padding-bottom: 217px;
 		padding-top: 137px;
@@ -127,7 +127,7 @@ line-height: 25px;
         font-family: "Space Mono" sans-serif;
 	}
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
 	.hero::after {
         top: 500px;
 	}
