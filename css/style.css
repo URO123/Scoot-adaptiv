@@ -426,7 +426,7 @@ body {
   background-color: #fcb72b;
   color: #FFF;
   text-align: center;
-  font-family: "Space Mono";
+  font-family: sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
@@ -462,6 +462,10 @@ body {
     height: 20px;
   }
 }
+.open {
+  display: flex;
+}
+
 .hero {
   position: relative;
   background-image: url("../../images/Bitmap (7).png");
