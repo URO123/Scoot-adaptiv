@@ -10,8 +10,6 @@ position: relative;
 .site-header__logo-link {
 	text-decoration: none;
 }
-.site-header__logo {
-}
 .site-header__list {
 	@include flex-starter;
 	@include list-starter;
