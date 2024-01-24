@@ -476,7 +476,7 @@ body {
     padding: 32px;
     z-index: 1;
     align-items: start;
-    height: 100vh;
+    height: 60vh;
     width: 70%;
     padding-right: 55px;
   }
@@ -503,7 +503,7 @@ body {
   padding: 32px;
   z-index: 1;
   align-items: start;
-  height: 100vh;
+  height: 60vh;
   width: 70%;
   padding-right: 35px;
 }
