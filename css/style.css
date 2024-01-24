@@ -488,7 +488,7 @@ body {
     height: 20px;
   }
   .site-header__item2 {
-    margin-top: 400px;
+    margin-top: auto;
     margin-right: auto;
     margin-left: 0;
   }
