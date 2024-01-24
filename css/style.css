@@ -973,6 +973,7 @@ body {
 }
 .footer {
   overflow-x: hidden;
+  position: relative;
 }
 
 .top {
@@ -983,7 +984,7 @@ body {
   position: relative;
   background-image: url("../../images/Group 22 (1).svg");
   background-size: 990px 150px;
-  background-position: bottom right;
+  background-position: calc(50% + 280px) bottom;
   background-repeat: no-repeat;
 }
 
@@ -1043,32 +1044,6 @@ body {
   width: 180px;
   height: 50px;
   cursor: pointer;
-}
-
-.top::before {
-  background-image: url(../../images/Group\ 22\ \(1\).png);
-  background-size: 1000px 150px;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 1000px;
-  height: 150px;
-  position: absolute;
-  content: "";
-  top: 150px;
-  right: -19px;
-}
-
-.top2::before {
-  background-image: url(../../images/Group\ 22\ \(1\).png);
-  background-size: 1000px 150px;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 1000px;
-  height: 150px;
-  position: absolute;
-  content: "";
-  top: 150px;
-  right: -19px;
 }
 
 .bottom {
