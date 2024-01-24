@@ -115,6 +115,12 @@
     text-decoration: none;
     font-family: sans-serif;
     color: #fff;
+	border: 3px solid transparent;
+}
+.service__item-link:hover{
+	color: #FCB72B;
+	background-color: transparent;
+	border: 3px solid #FCB72B;
 }
 .img_border{
     border-radius: 50%;

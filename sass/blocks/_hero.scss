@@ -77,6 +77,12 @@ line-height: 25px;
 	text-decoration: none;
 	margin-top: 40px;
 	margin-left: 95px;
+	border: 3px solid transparent;
+}
+.hero__link:hover{
+	color: #FCB72B;
+	background-color: transparent;
+	border: 3px solid #FCB72B;
 }
 @media only screen and (max-width: 900px) {
 	.hero::after {
