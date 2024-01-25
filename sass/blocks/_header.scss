@@ -103,6 +103,20 @@ border: solid 3px transparent;
 		margin-right: auto;
 		margin-left: 0;
 	}
+	.open{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		background-color: #333a44;
+		top: 43px;
+		left: -100px;
+		padding: 32px;
+		z-index: 1;
+		align-items: start;
+		height: 100vh;
+		width: 70%;
+		padding-right: 35px;
+	}
 }
 .open{
 	display: flex;
@@ -114,7 +128,7 @@ border: solid 3px transparent;
 	padding: 32px;
 	z-index: 1;
 	align-items: start;
-	height: 75vh;
+	height: 100vh;
 	width: 70%;
 	padding-right: 35px;
 }
