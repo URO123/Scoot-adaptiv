@@ -476,7 +476,7 @@ body {
     padding: 32px;
     z-index: 1;
     align-items: start;
-    height: 58vh;
+    height: 100vh;
     width: 70%;
     padding-right: 55px;
   }
@@ -503,7 +503,7 @@ body {
   padding: 32px;
   z-index: 1;
   align-items: start;
-  height: 58vh;
+  height: 75vh;
   width: 70%;
   padding-right: 35px;
 }
@@ -533,6 +533,13 @@ body {
   width: 452px;
   height: 151px;
   background-image: url("../../images/Group 8 Copy (1).svg");
+}
+
+.hero2 {
+  position: relative;
+  background-image: url("../../images/Bitmap (10).png");
+  background-size: cover;
+  padding: 72px 0;
 }
 
 .hero__main {
@@ -644,6 +651,11 @@ body {
     top: 500px;
   }
 }
+.service2 {
+  margin-top: 200px;
+  overflow-x: hidden;
+}
+
 .service {
   margin-top: 200px;
   margin-bottom: 330px;
@@ -679,6 +691,21 @@ body {
 .service__item-main1 {
   width: 445px;
   margin-left: 50px;
+}
+
+.box5 {
+  position: relative;
+  margin-bottom: 30px;
+}
+.box5::before {
+  content: "";
+  position: absolute;
+  right: -160px;
+  bottom: 30px;
+  width: 740px;
+  height: 150px;
+  background-image: url("../../images/Group 34 (1).svg");
+  z-index: 1;
 }
 
 .box {
@@ -784,6 +811,12 @@ body {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 1067px) {
+  .box5::before {
+    top: 300px;
+    left: -50px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .service {
     overflow-x: hidden;
@@ -821,6 +854,10 @@ body {
 @media only screen and (max-width: 768px) {
   .box::before {
     left: 20px;
+  }
+  .box5::before {
+    top: 180px;
+    left: -1px;
   }
   .service__item-img {
     max-width: 100%;
@@ -971,6 +1008,389 @@ body {
     content: none;
   }
 }
+.value {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.value__title {
+  color: #495567;
+  text-align: center;
+  max-width: 740px;
+  width: 100%;
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.value__list {
+  padding-top: 48px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 1000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.value__main {
+  max-width: 350px;
+  width: 100%;
+}
+
+.value__item {
+  text-align: center;
+  list-style: none;
+  padding-top: 55px;
+  max-width: 350px;
+  width: 100%;
+  position: relative;
+}
+
+.value__item::before {
+  background-image: url(../../images/01.svg);
+  background-repeat: no-repeat;
+  background-size: 29px;
+  width: 29px;
+  height: 29px;
+  content: "";
+  background-position: center;
+  position: absolute;
+  top: 210px;
+  left: calc(50% - 30px);
+  border-radius: 50%;
+  border: #FCB72B 1px solid;
+  padding: 34px;
+  background-color: #FCB72B;
+}
+
+.value__item2 {
+  text-align: center;
+  list-style: none;
+  padding-top: 55px;
+  max-width: 350px;
+  width: 100%;
+  position: relative;
+}
+
+.value__item2::before {
+  background-image: url(../../images/02.svg);
+  background-repeat: no-repeat;
+  background-size: 29px;
+  width: 29px;
+  height: 29px;
+  content: "";
+  background-position: center;
+  position: absolute;
+  top: 210px;
+  left: calc(50% - 30px);
+  border-radius: 50%;
+  border: #FCB72B 1px solid;
+  padding: 34px;
+  background-color: #FCB72B;
+}
+
+.value__item3 {
+  text-align: center;
+  list-style: none;
+  padding-top: 55px;
+  max-width: 350px;
+  width: 100%;
+  position: relative;
+}
+
+.value__item3::before {
+  background-image: url(../../images/03.svg);
+  background-repeat: no-repeat;
+  background-size: 29px;
+  width: 29px;
+  height: 29px;
+  content: "";
+  background-position: center;
+  position: absolute;
+  top: 210px;
+  left: calc(50% - 30px);
+  border-radius: 50%;
+  border: #FCB72B 1px solid;
+  padding: 34px;
+  background-color: #FCB72B;
+}
+
+.value__img {
+  max-width: 200px;
+  width: 100%;
+  height: 200px;
+}
+
+.value__text {
+  margin-top: 87px;
+  margin-bottom: 27px;
+  color: #495567;
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.071px;
+}
+
+.value__item-text {
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+  color: #939CAA;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .value__list {
+    flex-direction: column;
+  }
+  .value__main {
+    width: 100%;
+    text-align: center;
+  }
+}
+.faqs__title {
+  color: #495567;
+  max-width: 740px;
+  width: 100%;
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faqs__top {
+  padding-top: 130px;
+  margin-bottom: 64px;
+  display: flex;
+  max-width: 1110px;
+  width: 100%;
+}
+
+.top__left-title {
+  color: #495567;
+  font-family: "Space Mono";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  /* 120% */
+  letter-spacing: -1.786px;
+  margin-right: 20px;
+  max-width: 633px;
+  width: 100%;
+}
+
+.top__left {
+  max-width: 350px;
+  width: 100%;
+}
+
+.right__list {
+  margin-left: auto;
+}
+
+.right__item {
+  max-width: 700px;
+  width: 100%;
+  list-style: none;
+  background-color: #F2F5F9;
+  padding: 32px 40px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.right__item2 {
+  max-width: 700px;
+  width: 100%;
+  list-style: none;
+  background-color: #F2F5F9;
+  padding: 32px 40px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.right__item:active {
+  background-color: #FFF4DF;
+}
+
+.right__item2:active {
+  background-color: #FFF4DF;
+}
+
+.right__item-title {
+  color: #495567;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.071px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.button1235 {
+  margin-left: auto;
+}
+
+.button123 {
+  margin-left: auto;
+}
+
+.button1231 {
+  margin-left: auto;
+}
+
+.button1232 {
+  margin-left: auto;
+}
+
+.button1233 {
+  margin-left: auto;
+}
+
+.button1234 {
+  margin-left: auto;
+}
+
+.right__item-text {
+  max-width: 650px;
+  width: 100%;
+  color: #495567;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.faqs__bottom {
+  display: flex;
+}
+
+.bottom__left {
+  max-width: 350px;
+  width: 100%;
+}
+
+.bottom__left-title {
+  color: #495567;
+  font-family: "Space Mono";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  /* 120% */
+  letter-spacing: -1.786px;
+  max-width: 350px;
+  width: 100%;
+  margin-right: 30px;
+  padding-right: 30px;
+}
+
+.nimadir {
+  display: flex;
+  align-items: center;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.site-item-bottom {
+  height: 0;
+  overflow: hidden;
+}
+
+.site-item-bottom1 {
+  height: 0;
+  overflow: hidden;
+}
+
+.site-item-bottom2 {
+  height: 0;
+  overflow: hidden;
+}
+
+.site-item-bottom3 {
+  height: 0;
+  overflow: hidden;
+}
+
+.site-item-bottom4 {
+  height: 0;
+  overflow: hidden;
+}
+
+.site-item-bottom5 {
+  height: 0;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .faqs__top {
+    flex-direction: column;
+  }
+  .top__left-title {
+    margin-right: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .top__left {
+    width: 100%;
+    max-width: 699px;
+    margin-bottom: 32px;
+  }
+  .bottom__left-title {
+    margin-right: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .bottom__left {
+    width: 100%;
+    max-width: 699px;
+    margin-bottom: 32px;
+  }
+  .faqs__bottom {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .right__item-title {
+    font-size: 18px;
+  }
+  .right__item-text {
+    font-size: 12px;
+  }
+}
+.opens {
+  height: 100%;
+}
+
 .footer {
   overflow-x: hidden;
   position: relative;

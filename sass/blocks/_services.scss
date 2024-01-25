@@ -1,3 +1,7 @@
+.service2 {
+    margin-top: 200px;
+    overflow-x: hidden;
+}
 .service {
     margin-top: 200px;
     margin-bottom: 330px;
@@ -27,7 +31,20 @@
 	width: 445px;
 	margin-left: 50px;
 }
-
+.box5 {
+	position: relative;
+    margin-bottom: 30px;
+	&::before {
+		content: '';
+		position: absolute;
+		right: -160px;
+		bottom: 30px;
+		width: 740px;
+		height: 150px;
+		background-image: url('../../images/Group\ 34\ \(1\).svg');
+		z-index: 1;
+	}
+}
 .box {
 	position: relative;
     margin-bottom: 30px;
@@ -125,7 +142,15 @@
 .img_border{
     border-radius: 50%;
 }
-
+@media only screen and (max-width: 1067px){
+	
+	.box5{
+        &::before{
+        top: 300px;
+        left: -50px;
+        }
+    }
+}
 @media only screen and (max-width: 768px) {
 	.service {
 		overflow-x: hidden;
@@ -173,6 +198,12 @@
 		&::before {
 			left: 20px;
 		}
+}
+.box5 {
+	&::before {
+		top: 180px;
+		left: -1px;
+	}
 }
 @media only screen and (max-width: 500px) {
 	}
