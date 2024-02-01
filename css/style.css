@@ -1518,6 +1518,8 @@ body {
   .apply__link {
     margin-left: 0;
     margin-top: 16px;
+    max-width: 100%;
+    width: 100%;
   }
 }
 .map {
