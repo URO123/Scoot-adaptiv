@@ -59,9 +59,13 @@ border: #FCB72B solid 1px;
     color: #FCB72B;
 }
 .map__img {
-    max-width: 1110px;
+    max-width: 100%;
     width: 100%;
-    height: 543px;
+}
+.map__img-mobile{
+    display: none;
+    max-width: 100%;
+    width: 100%;
 }
 .locations {
     display: none;
@@ -94,38 +98,19 @@ font-weight: 700;
 line-height: 28px; /* 116.667% */
 letter-spacing: -1.071px;
 }
-@media only screen and (max-width: 1102px) {
-    .map__img{
-        max-width: 1080px;
-        width: 100%;
-        height: 530px;
-    }
-}
-@media only screen and (max-width: 1062px) {
-    .map__img{
-        max-width: 900px;
-        width: 100%;
-        height: 430px;
-    }
-}
-@media only screen and (max-width: 890px) {
-    .map__img{
-        max-width: 698px;
-        width: 100%;
-        height: 337px;
-    }
-}
 @media only screen and (max-width: 840px) {
     .city{
         flex-direction: column;
     }
     .city__title{
         text-align: center;
+        margin: 0;
         max-width: 457px;
         width: 100%;
     }
     .city__text{
         text-align: center;
+        margin: 0;
         margin-top: 40px;
         margin-bottom: 40px;
         max-width: 570px;
@@ -134,128 +119,21 @@ letter-spacing: -1.071px;
     .city__link{
         margin-left: 0;
     }
-    .map__img{
-        max-width: 698px;
-        width: 100%;
-        height: 337px;
-        padding-left: 50px;
-    }
 }
-@media only screen and (max-width: 730px) {
-    .map__inner{
-        &::before{
-            background-image: url(../../images/Group\ 24.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 698px 337px;
-            z-index: 1;
-            position: absolute;
-            content: "";
-            max-width: 698px;
-            left: 10px;
-            top: 0;
-            width: 100%;
-            height: 337px;
-        }
-    }
+@media only screen and (max-width: 440px) {
     .map__img{
         display: none;
     }
+    .map__img-mobile{
+        display: block;
+        margin-top: 0;
+    }
     .locations{
         display: block;
-        padding-top: 400px;
+        margin-top: 90px;
     }
-}
-@media only screen and (max-width: 680px) {
-    .map__inner{
-        &::before{
-            background-image: url(../../images/Group\ 24.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 658px 307px;
-            z-index: 1;
-            position: absolute;
-            content: "";
-            max-width: 658px;
-            left: 10px;
-            top: 0;
-            width: 100%;
-            height: 307px;
-        }
+    .locations__link{        
+        max-width: 100%;
+        width: 100%;
     }
-}
-@media only screen and (max-width: 637px) {
-    .map__inner{
-        &::before{
-            background-image: url(../../images/Group\ 24.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 638px 287px;
-            z-index: 1;
-            position: absolute;
-            content: "";
-            max-width: 638px;
-            left: 10px;
-            top: 0;
-            width: 100%;
-            height: 287px;
-        }
-    }
-}
-@media only screen and (max-width: 580px) {
-    .map__inner{
-        &::before{
-            background-image: url(../../images/Group\ 24.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 608px 267px;
-            z-index: 1;
-            position: absolute;
-            content: "";
-            max-width: 608px;
-            left: 10px;
-            top: 0;
-            width: 100%;
-            height: 267px;
-        }
-    }
-}
-@media only screen and (max-width: 500px) {
-    .map__inner{
-        &::before{
-            background-image: url(../../images/Group\ 24.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 578px 237px;
-            z-index: 1;
-            position: absolute;
-            content: "";
-            max-width: 578px;
-            left: 10px;
-            top: 0;
-            width: 100%;
-            height: 237px;
-        }
-    }
-}
-@media only screen and (max-width: 440px) {
-    .map__inner{
-        &::before{
-            background-image: url(../../images/Group\ 24.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 311px 152px;
-            z-index: 1;
-            position: absolute;
-            content: "";
-            max-width: 331px;
-            top: 0;
-            width: 100%;
-            height: 172px;
-            right: 30px;
-        }
-    }
-.locations{
-    padding-top: 180px;
-}
 }
